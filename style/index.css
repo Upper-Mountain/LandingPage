@@ -84,13 +84,12 @@ nav {
 }
 
 .stuck {
-  box-shadow: 0 1px 5px #000;
+  box-shadow: 0 0 9px rgba(0,0,0,0.5);
   position: fixed;
   top: 0;
 }
 
 .paper {
-
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
   background-color: var(--color-white);
   padding: 10px;
