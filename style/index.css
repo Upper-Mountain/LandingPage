@@ -75,9 +75,25 @@ h6 {
   }
 }
 
+nav {
+  background: var(--color-primary);
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  z-index: 1;
+  box-shadow: 0 1px 5px #000;
+}
+
+.stuck {
+  position: fixed;
+  top: 0;
+}
+
 .paper {
-  border: 10px solid var(--color-primary);
+
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
   background-color: var(--color-white);
   padding: 10px;
+  padding-top: 100px;
 }
+
