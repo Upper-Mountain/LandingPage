@@ -84,6 +84,8 @@ nav {
 }
 
 .flex-container {
+  padding-left: 5%;
+  padding-right: 5%;
   height: inherit;
   display: flex;
   flex-direction: row;
@@ -96,6 +98,10 @@ nav a {
   color: var(--color-white);
 }
 
+nav a:hover {
+}
+
+
 .stuck {
   box-shadow: 0 0 9px rgba(0,0,0,0.5);
   position: fixed;
@@ -107,4 +113,14 @@ nav a {
   background-color: var(--color-white);
   padding: 10px;
   padding-top: 100px;
+}
+
+h2 {
+  margin: 0;
+}
+
+.dark-section {
+  padding: 10px;
+  background-color: var(--color-dark);
+  color: var(--color-white);
 }
