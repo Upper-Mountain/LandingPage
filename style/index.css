@@ -36,7 +36,7 @@ h6 {
 }
 
 .main-hero {
-  background-image: url('/images/hero.jpg');
+  background-image: url('../images/hero.jpg');
 
   position: fixed;
   top: 0;
@@ -76,11 +76,21 @@ h6 {
 }
 
 nav {
+
   background: var(--color-primary);
   position: absolute;
   width: 100%;
   height: 50px;
   z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-white);
 }
 
 .stuck {
@@ -95,4 +105,3 @@ nav {
   padding: 10px;
   padding-top: 100px;
 }
-
