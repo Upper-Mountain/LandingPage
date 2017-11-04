@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/index.css">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Playfair+Display" rel="stylesheet">
   </head>
-  <body>
+  <>
     <div class="main-hero" id="hero">
       <div class="container">
         <h1 class="main-hero-msg">Upper Mountain Software</h1>
@@ -16,9 +16,9 @@
     </div>
     <nav id="nav-bar">
       <div class="flex-container">
-        <a href="#section-one">Section 1</a>
-        <a href="#section-two">Section 2</a>
-        <a href="#">Section 3</a>
+        <a data-easing="easeInOutQuad" href="#">Home</a>
+        <a data-easing="easeInOutQuad" href="#section-one">Section 1</a>
+        <a data-easing="easeInOutQuad" href="#section-two">Section 2</a>
       </div>
     </nav>
 
@@ -45,6 +45,10 @@
         <p>Salami shankle pastrami consequat sirloin, biltong magna frankfurter laborum hamburger fugiat sed. Sed porchetta laborum ut, dolore incididunt non ground round shankle ullamco jowl tongue adipisicing swine. Sed nisi occaecat lorem esse. Commodo aliquip ham tongue quis boudin pancetta shoulder shankle kielbasa spare ribs meatloaf jerky adipisicing fatback. Spare ribs consequat biltong, sunt fugiat hamburger beef eu. Dolor beef ribs nostrud sausage.</p>
       </div>
     </div>
-    <script  src="scripts/index.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/smooth.js"></script>
+    <script>
+      var easeInOutQuad = new SmoothScroll('[data-easing="easeInOutQuad"]', {easing: 'easeInOutQuad'});
+    </script>
   </body>
 </html>
