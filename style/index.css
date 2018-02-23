@@ -6,7 +6,7 @@ html {
   box-sizing: border-box;
 
   font-family: 'Libre Baskerville', serif;
-  color: var(--color-dark);
+  color: var(--body-text);
 }
 
 * {
@@ -14,11 +14,13 @@ html {
 }
 
 :root {
-  --color-primary: #66A182;
-  --color-accent: #57467B;
-  --color-dark: #223843;
-  --color-white: #eff1f3;
-  --color-light: #9ba7c0;
+  --color-primary-dark: #00796B;
+  --color-primary: #009688;
+  --color-primary-light: #B2DFDB;
+  --color-accent: #607D8B;
+  --body-text: #212121;
+  --secondary-text: #757575;
+  --white: #ffffff;
 }
 
 h1,
@@ -50,7 +52,7 @@ h6 {
   background-repeat: no-repeat;
   background-size: cover;
 
-  color: white;
+  color: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,8 +98,8 @@ nav {
 }
 
 nav a {
+  color: var(--white);
   text-decoration: none;
-  color: var(--color-white);
 }
 
 nav a:hover {
@@ -105,15 +107,17 @@ nav a:hover {
 
 
 .stuck {
-  background: var(--color-primary);
+  background: var(--color-primary-dark);
   box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 }
 
 .paper {
-  background-color: var(--color-white);
+  z-index: -1;
+  background-color: var(--white);
   padding: 10px;
   padding-top: 100px;
   padding-bottom: 100px;
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 }
 
 h2 {
@@ -124,8 +128,8 @@ h2 {
   padding: 10px;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: var(--color-dark);
-  color: var(--color-white);
+  background-color: var(--color-primary);
+  color: var(--white);
 }
 
 .scroll-down {
