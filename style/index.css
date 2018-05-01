@@ -5,7 +5,8 @@ html {
   padding: 0;
   box-sizing: border-box;
 
-  font-family: 'Libre Baskerville', serif;
+  /*font-family: 'Libre Baskerville', serif;*/
+  font-family: 'Raleway', sans-serif;
   color: var(--body-text);
 }
 
@@ -14,10 +15,9 @@ html {
 }
 
 :root {
-  --color-primary-dark: #00796B;
-  --color-primary: #009688;
-  --color-primary-light: #B2DFDB;
-  --color-accent: #607D8B;
+  --color-primary: #138BFC;
+  --color-accent: #60D3FF;
+  --color-primary-light: #A3ECFF;
   --body-text: #212121;
   --secondary-text: #757575;
   --white: #ffffff;
@@ -29,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .container {
@@ -106,9 +106,10 @@ nav a:hover {
 }
 
 
-.stuck {
-  background: var(--color-primary-dark);
-  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+.stuck * {
+  background: var(--white);
+  color: var(--body-text);
+  /*box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);*/
 }
 
 .paper {
@@ -128,7 +129,7 @@ h2 {
   padding: 10px;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: var(--color-primary);
+  background-color: var(--color-accent);
   color: var(--white);
 }
 
